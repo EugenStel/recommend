@@ -1,0 +1,1 @@
+export const getBooks = ({ books: { books } }) => books;

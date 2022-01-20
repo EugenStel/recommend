@@ -1,0 +1,1 @@
+export const getAllRecommends = ({ recommends: { recommends } }) => recommends;

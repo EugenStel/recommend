@@ -1,0 +1,39 @@
+.card:hover {
+    transition: all .5s ease;
+    box-shadow: 0px 20px 35px rgba(0,0,0,.07);
+    transform: translateY(-5px);
+}
+
+.movies_wrapper {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    margin-top: 15px;
+    grid-gap: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+    .movies_wrapper {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        margin-top: 15px;
+        grid-gap: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .movies_wrapper {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        margin-top: 15px;
+        grid-gap: 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .movies_wrapper {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        margin-top: 15px;
+        grid-gap: 15px;
+    }
+}

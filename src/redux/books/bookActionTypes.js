@@ -1,0 +1,4 @@
+export const bookActionTypes = {
+    FETCH_BOOKS_FROM_API: 'FETCH_BOOKS_FROM_API',
+    FETCH_BOOKS_FROM_API_FAIL: 'FETCH_BOOKS_FROM_API_FAIL'
+}
