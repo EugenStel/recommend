@@ -14,11 +14,11 @@ export const DrinksCard = ({ name, image_url, tagline, first_brewed, id, abv, fo
     }
     return (
         <>
-            <article key={id} className="flex justify-around bg-gray-100 py-2 px-5 rounded-lg sm:px-5">
-                <div className="relative mr-3">
+            <article key={id} className="grid grid-cols-2 gap-4 relative bg-gray-100 py-2 px-5 rounded-lg sm:px-5">
+                <div className="mr-3">
                     <h3 className="font-bold my-2 text-2xl text-center">{name}</h3>
-                    <p className="p-2 absolute -left-16 -top-8 h-12 w-12 bg-indigo-500 rounded-full flex text-white justify-center items-center">{`${abv}%`}</p>
-                    <img src={image_url} alt={name} className="block mx-auto w-1/4" />
+
+                    <img src={image_url} alt={name} className="block mx-auto overflow-hidden w-1/5" />
                 </div>
                 <div className="grid content-between">
                     <p className="py-1">{tagline}</p>
@@ -36,6 +36,7 @@ export const DrinksCard = ({ name, image_url, tagline, first_brewed, id, abv, fo
                         Favourite
                     </Fab>
                 </div>
+                <p className="p-2 absolute -left-5 -top-5 h-15 w-15 bg-indigo-500 rounded-full flex text-white justify-center items-center">{`${abv}%`}</p>
             </article>
         </>
     )
