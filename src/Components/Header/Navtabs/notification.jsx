@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Box, IconButton, List, ListItem, ListItemText, Menu } from "@material-ui/core";
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
@@ -23,8 +23,9 @@ export default function Notification() {
     setAnchorEl(null);
   };
 
-
   const recommendMovies = useSelector(getAllRecommends);
+
+
 
   return (
     <Box>
